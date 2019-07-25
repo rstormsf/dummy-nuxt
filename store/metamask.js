@@ -14,7 +14,9 @@ const actions = {
   loadMetamask() {
     window.onload = () => {
       console.log("window", window.ethereum)
-      window.alert(`window.ethereum: ${stringify(window.ethereum)}`)
+      setTimeout(() => {
+        window.alert(`window.ethereum: ${stringify(window.ethereum)}`)
+      }, 10000)
     }
   }
 }
